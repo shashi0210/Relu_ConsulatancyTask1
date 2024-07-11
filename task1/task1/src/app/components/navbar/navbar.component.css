@@ -1,0 +1,78 @@
+/* General styles for the navigation container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #e9ecef, #f8f9fa);
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Navigation title and links */
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #4a90e2;
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+    color: #4a90e2;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #218838;
+}
+
+/* Navigation list styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Active link styling */
+nav a.active {
+    color: #218838;
+    font-weight: bold;
+}
+
+/* Logout item */
+nav ul li {
+    color: #4a90e2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #218838;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

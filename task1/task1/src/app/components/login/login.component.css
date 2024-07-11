@@ -1,0 +1,80 @@
+/* General styles for the form container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Form title */
+.container h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2;
+    font-size: 24px;
+}
+
+/* Input fields */
+.container input[type="email"],
+.container input[type="password"] {
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container input[type="email"]:focus,
+.container input[type="password"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
+}
+
+/* Error messages */
+.red-text {
+    color: #e74c3c;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Buttons */
+.btn-green,
+.btn-red {
+    width: calc(50% - 12px); /* Adjust for margin */
+    padding: 12px;
+    margin: 15px 6px 0 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-green {
+    background-color: #28a745;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-red {
+    background-color: #dc3545;
+}
+
+.btn-red:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}

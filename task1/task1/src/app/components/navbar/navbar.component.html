@@ -1,0 +1,13 @@
+<div>
+    <nav>
+       <h2><a routerLink="/signup">Registration Page</a></h2>
+       <ul>
+        @if(authService.isAuthenticated()){
+          <li (click)="authService.logout()">Logout</li>
+        }@else{
+          <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+          <li><a routerLink="/signup" routerLinkActive="active">Register</a></li>
+        }
+       </ul>
+    </nav>
+</div>

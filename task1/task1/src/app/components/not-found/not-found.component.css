@@ -1,0 +1,19 @@
+/* Not Found Page Container */
+.not-found-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Not Found Heading */
+.not-found-container h1 {
+    color: #4a90e2;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
